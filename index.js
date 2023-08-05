@@ -38,7 +38,7 @@ for (const name of Object.keys(nets)) {
     }
 }
 
-console.log("IP: %s", results["en0"][0])
+console.log("IP: %s", JSON.stringify(results, null, 2))
 
 wss.on('connection', ws => {
     ws.on('error', console.error);
